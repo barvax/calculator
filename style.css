@@ -5,7 +5,17 @@ body{
 table{
     width:200px;
     text-align: center;
+
 }
-table, th, td {
+table,  td {
     border: 1px solid black;
+  }
+  td:hover{
+
+    background-color: rgb(141, 141, 141);
+  }
+  div{
+
+    padding-left: 100px;
+    padding-top: 100px;
   }

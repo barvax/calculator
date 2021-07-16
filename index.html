@@ -9,42 +9,45 @@
     <title>Document</title>
 </head>
 <body>
-
+<div>
     <table >
         <tr>
-            <td colspan="4"><input></td>
+            <td colspan="4" ><input id="input"></td>
            
         </tr>
         <tr>
-          <td>-</td>
-          <td>*</td>
-          <td>/</td>
-          <td>+</td>
+          <td onclick="myOparator('-')">-</td>
+          <td onclick="myOparator('*')">*</td>
+          <td onclick="myOparator('/')">/</td>
+          <td onclick="myOparator('+')">+</td>
         </tr>
         <tr>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-          <td>C</td>
+          <td onclick="enterOnClick('7')">7</td>
+          <td onclick="enterOnClick('8')">8</td>
+          <td onclick="enterOnClick('9')"> 9</td>
+          <td onclick="clearMe()">C</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td rowspan="3">=</td>
+            <td onclick="enterOnClick('4')">4</td>
+            <td onclick="enterOnClick('5')">5</td>
+            <td onclick="enterOnClick('6')">6</td>
+            <td rowspan="3" onclick="calc()">=</td>
           </tr>
           <tr>
-            <td>3</td>
-            <td>2</td>
-            <td>1</td>
+            <td onclick="enterOnClick('3')">3</td>
+            <td onclick="enterOnClick('2')"> 2</td>
+            <td onclick="enterOnClick('1')">1</td>
             
           </tr>
           <tr>
-            <td colspan="3">0</td>
+            <td colspan="3" onclick="enterOnClick('0')">0</td>
            
            
           </tr>
       </table>
+
+</div>
+   
     <script src="calc.js"></script>
 </body>
 </html>
