@@ -2,11 +2,19 @@ var num1 = 0;
 var num2 = 0;
 var oparator;
 var result;
-
+var  isComplete = false;
+var isFirtsNum = false;
 var screen = document.getElementById('input');
 
 function enterOnClick(button){
 
+    if(isComplete){
+        clearMe();
+        isComplete=false;
+    }else if(isFirtsNum){
+        clearMe();
+        
+    }
     screen.value+=button;
 }
 function clearMe(){
@@ -16,7 +24,8 @@ function clearMe(){
 function myOparator(sign){
 num1 = Number(screen.value);
 oparator = sign;
-clearMe();
+isFirtsNum = true;
+
 }
 
 function calc(){
@@ -36,4 +45,6 @@ function calc(){
         result =  num1/num2;
         screen.value = result;
     }
+    isFirtsNum=false;
+    isComplete=true;
 }
