@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>MyCalculator</title>
 </head>
 <body>
 <div>
     <table >
         <tr>
-            <td colspan="4" ><input id="input"></td>
+            <td colspan="4" ><input id="input" disabled></td>
            
         </tr>
         <tr>
@@ -40,13 +40,15 @@
             
           </tr>
           <tr>
-            <td colspan="3" onclick="enterOnClick('0')">0</td>
+            <td colspan="2" onclick="enterOnClick('0')">0</td>
+            <td  onclick="enterOnClick('.')">.</td>
            
            
           </tr>
       </table>
 
 </div>
+
    
     <script src="calc.js"></script>
 </body>

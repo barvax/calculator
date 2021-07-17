@@ -5,6 +5,7 @@ var result;
 var  isComplete = false;
 var isFirtsNum = false;
 var screen = document.getElementById('input');
+var ron = [5,"+",6,"*",1]
 
 function enterOnClick(button){
 
@@ -13,6 +14,7 @@ function enterOnClick(button){
         isComplete=false;
     }else if(isFirtsNum){
         clearMe();
+        isFirtsNum=false;
         
     }
     screen.value+=button;
@@ -48,3 +50,4 @@ function calc(){
     isFirtsNum=false;
     isComplete=true;
 }
+
